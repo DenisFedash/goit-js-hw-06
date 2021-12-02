@@ -31,7 +31,3 @@ button {
   list-style: none;
   margin-right: 10px;
 }
-
-.gallery__image {
-  max-width: 640px;
-}
