@@ -15,8 +15,5 @@ const images = [
 
 images.forEach(image => {
   document.querySelector('.gallery')
-   .insertAdjacentHTML('beforeend', `<li class = 'gallery__item'><img src = ${image.url}' alt = '${image.alt}' width='480' height='240'></li>`)  
+   .insertAdjacentHTML('beforeend', `<li class = 'gallery__item'><img src = '${image.url}' alt = '${image.alt}' width='480' height='240'></li>`)  
 });
-
-
-

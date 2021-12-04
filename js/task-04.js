@@ -1,8 +1,6 @@
 const ref = {
     del: document.querySelector("[data-action='decrement']"),
-    add: document.querySelector("[data-action='increment']"),
-    span: document.querySelector('#value'),
-    div: document.querySelector('#counter'),
+    add: document.querySelector("[data-action='increment']"),    
 }
 
 let counterValue = 0;

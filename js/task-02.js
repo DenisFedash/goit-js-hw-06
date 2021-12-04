@@ -9,8 +9,7 @@ const ingredients = [
 
 const lis = ingredients.map((item) => {
   const li = document.createElement('li');
-  li.textContent = item;
-  
+  li.textContent = item;  
   return li;
 });
 

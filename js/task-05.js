@@ -3,15 +3,14 @@ const ref = {
     span: document.querySelector('#name-output'),
 };
 
-ref.form.addEventListener('input', (event) => {
-    ref.span.textContent = event.currentTarget.value;
-
-    if (ref.form.value === ' ') {
-        console.log("Anonymous")
-    }
-})
+ref.form.addEventListener('input', (event) => {     
+    ref.span.textContent = event.currentTarget.value || 'Anonymous';  
+}
+);
 
 
+       
+        
     
 
 
