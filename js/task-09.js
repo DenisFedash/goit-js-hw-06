@@ -8,12 +8,9 @@ const refs = {
   btnEl: document.querySelector('.change-color'),
 };
 
-refs.btnEl.addEventListener("click", function (e) {
-  document.body.style.backgroundColor = [`#${Math.floor(Math.random() * 16777215).toString(16)}`];
-  refs.spanEl.textContent = e.getRandomHexColor;
+let color = -1;
+refs.btnEl.addEventListener("click", function () {
+  color = getRandomHexColor(color);
+  document.body.style.backgroundColor = color;
+  refs.spanEl.textContent = color;  
 });
-
-
-
-
-
