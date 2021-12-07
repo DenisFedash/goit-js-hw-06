@@ -13,7 +13,6 @@ const images = [
   },
 ];
 
-images.forEach(image => {
-  document.querySelector('.gallery')
-   .insertAdjacentHTML('beforeend', `<li class = 'gallery__item'><img src = '${image.url}' alt = '${image.alt}' width='480' height='240'></li>`)  
-});
+const galleryEl = document.querySelector('.gallery')
+const cards = images.map((image) => `<li class = 'gallery__item'><img src = '${image.url}' alt = '${image.alt}' width='480' height='240'></li>`);
+galleryEl.insertAdjacentHTML('beforeend', cards);
