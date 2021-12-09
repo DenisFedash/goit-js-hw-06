@@ -9,5 +9,5 @@ function onBlurInput(event) {
    } else {
       event.currentTarget.classList.remove('valid');
       event.currentTarget.classList.add('invalid');
-   }
-}
+   };
+};
